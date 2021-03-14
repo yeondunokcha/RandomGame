@@ -1,4 +1,4 @@
-import discord , asyncio , random , time
+import discord , asyncio , random , time , os
 
 client = discord.Client()
 
@@ -65,5 +65,5 @@ async def on_message(message):
             await message.channel.send("꽝")
             time.sleep(1)
             
-
+access_token = os.environ["BOT_TOKEN"]
 client.run(token)

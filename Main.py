@@ -2,10 +2,6 @@ import discord , asyncio , random , time , os
 
 client = discord.Client()
 
-token = "ODIwNDM3Mzc3OTU2NDQ2MjU5.YE1J2Q.CGbpmiRYNhOHRS0DM1ObjnB45bo"
-
-redomex = True
-
 gat = ['뽑기','ㅃㄱ']
 rd = ['확률','ㅎㄹ']
 va = ['버전','ㅂㅈ']
@@ -66,4 +62,4 @@ async def on_message(message):
             time.sleep(1)
             
 access_token = os.environ["BOT_TOKEN"]
-client.run(token)
+client.run(access_token)
